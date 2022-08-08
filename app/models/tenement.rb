@@ -1,0 +1,2 @@
+class Tenement < ApplicationRecord
+end
