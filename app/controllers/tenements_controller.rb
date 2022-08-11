@@ -1,5 +1,6 @@
 class TenementsController < ApplicationController
    def index
-        render json: { hello: 'world' }
+        tenements = Tenement.all
+        render json: tenements
    end
 end
