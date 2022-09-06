@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   resources :tenements
 
-  resources :apartments
+  resources :apartments do
+    resources :occupants
+  end
 
-  resources :occupants
+  resources :occupants do
+    resources :apartments
+  end
 end
